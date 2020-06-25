@@ -23,5 +23,14 @@ var display = function() {
     console.log("");
     console.log("Find below our Products List");
     console.log("");
-  });
-};
+//Creating a table that will connect the cli-table//     
+    var table = new Table({
+      head: ["Product Id", "Product Description", "Price"],
+      colWidths: [12, 30, 10],
+      colAligns: ["center", "center", "center"],
+      style: {
+        head: ["aqua"],
+        compact: true
+        // 'padding-right' : 1,
+      }
+    });
