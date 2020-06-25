@@ -85,8 +85,9 @@ var viewLowInventory = function() {
     connection.query(`SELECT * FROM product WHERE stock_quantity < 5 ORDER BY stock_quantity DESC`, (err, res) => {
         if (res.length > 0) {
             var listTable = new Table({
-                head: ['Product ID', 'Product Deacription', 'In Stock', 'Price'],
-                colWidths: [10, 45, 10, 12]
+                head: ["Product Id", "Product Description","Quantity", "Price"],
+                colWidths: [20, 45, 10, 12],
+                colAligns: ["center", "center", "center", "center"],
             });
 
             for (var i = 0; i < res.length; i++) {
