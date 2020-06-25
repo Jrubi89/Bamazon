@@ -17,11 +17,11 @@ var display = function() {
   //Using query to connect to data base//
   connection.query("SELECT * FROM product", function(err, res) {
     if (err) throw err;
-    console.log("-----------------------------");
-    console.log("      Welcome To Bamazon    ");
-    console.log("-----------------------------");
+    console.log("-----------------------------------------------------------");
+    console.log("                   Welcome To Bamazon                      ");
+    console.log("-----------------------------------------------------------");
     console.log("");
-    console.log("Find below our Products List");
+    console.log("                 Find below our Product List               ");
     console.log("");
 //Creating a table that will connect the cli-table//     
     var table = new Table({
@@ -42,7 +42,7 @@ var display = function() {
     console.log(table.toString());
     console.log("");
     shopping();
-  }); //End Connection to products//
+  }); //End Connection to product//
 };
 //Shopping variable//
 var shopping = function() {
@@ -54,7 +54,7 @@ var shopping = function() {
     })
     .then(function(answer1) {
       var selection = answer1.productToBuy;
-      connection.query("SELECT * FROM products WHERE Id=?", selection, function(
+      connection.query("SELECT * FROM product WHERE Id=?", selection, function(
         err,
         res
       ) {
@@ -83,12 +83,12 @@ var shopping = function() {
                 shopping();
               } else {
                 console.log("");
-                console.log(res[0].products_name + " purchased");
+                console.log(res[0].product_name + " purchased");
                 console.log(quantity + " qty @ $" + res[0].price);
 
                 var newQuantity = res[0].stock_quantity - quantity;
                 connection.query(
-                  "UPDATE products SET stock_quantity = " +
+                  "UPDATE product SET stock_quantity = " +
                     newQuantity +
                     " WHERE id = " +
                     res[0].id,
