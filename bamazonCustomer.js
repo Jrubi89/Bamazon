@@ -38,3 +38,8 @@ var display = function() {
     for (var i = 0; i < res.length; i++) {
       table.push([res[i].id, res[i].product_name, res[i].price]);
     }
+//Console log table//    
+    console.log(table.toString());
+    console.log("");
+    shopping();
+  }); //End Connection to product//
