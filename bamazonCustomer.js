@@ -10,3 +10,18 @@ var connection = mysql.createConnection({
   database: "bamazon_db",
   port: 3306
 });
+//Calling connection//
+connection.connect();
+//Variable to display table//
+var display = function() {
+  //Using query to connect to data base//
+  connection.query("SELECT * FROM product", function(err, res) {
+    if (err) throw err;
+    console.log("-----------------------------");
+    console.log("      Welcome To Bamazon    ");
+    console.log("-----------------------------");
+    console.log("");
+    console.log("Find below our Products List");
+    console.log("");
+  });
+};
