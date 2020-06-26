@@ -150,7 +150,7 @@ var addNewProduct = function() {
     ]).then((answers) => {
         connection.query('INSERT INTO product SET ?', {
             product_name: answers.name,
-            department_name: answers.department,
+            deparment_id: answers.department,
             price: answers.price,
             stock_quantity: answers.stockNum
         }, (err, res) => {
@@ -222,7 +222,7 @@ var confirmItem = function(product, object) {
             itemToUpdate = {
                 id: object[0].id,
                 product_name: object[0].product_name,
-                department_name: object[0].department_name,
+                deparment_id: object[0].deparment_id,
                 price: object[0].price,
                 stock_quantity: object[0].stock_quantity,
                 product_sales: object[0].product_sales
