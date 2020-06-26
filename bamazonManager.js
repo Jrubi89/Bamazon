@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+var chalk = require('chalk');
 var Table = require("cli-table2");
 
 var connection = mysql.createConnection({
@@ -162,11 +163,11 @@ var addNewProduct = function() {
 
 var deleteProduct = function() {
     inquirer.prompt({
-        name: 'itemID',
+        name: 'ID',
         type: 'input',
         message: 'Enter the ID of the product you\'d like to remove:'
     }).then((answer) => {
-        connection.query('SELECT * FROM product WHERE ?', { item_id: answer.itemID }, (err, res) => {
+        connection.query('SELECT * FROM product WHERE ?', { id: answer.ID }, (err, res) => {
             inquirer.prompt({
                 name: 'confirm',
                 type: 'confirm',
@@ -174,9 +175,9 @@ var deleteProduct = function() {
             }).then((answer) => {
                 if (answer.confirm) {
                     itemToDelete = {
-                        item_id: res[0].item_id
+                        id: res[0].id
                     };
-                    connection.query('DELETE FROM product WHERE ?', { item_id: itemToDelete.item_id }, (err, res) => {
+                    connection.query('DELETE FROM product WHERE ?', { id: itemToDelete.id }, (err, res) => {
                         if (err) throw err;
                         console.log(chalk.blue.bold('\n\tItem successfully removed!'));
                         viewActiveProduct();
@@ -191,7 +192,7 @@ var deleteProduct = function() {
 
 var askForID = function() {
     inquirer.prompt({
-        name: 'itemID',
+        name: 'ID',
         type: 'input',
         message: 'Enter the ID of the item you\'d like to update:',
         // validate input is number from 1-10
@@ -205,7 +206,7 @@ var askForID = function() {
         }
         // select all rows where ID = user's input
     }).then((answer) => {
-        connection.query('SELECT * FROM product WHERE ?', { item_id: answer.itemID }, (err, res) => {
+        connection.query('SELECT * FROM product WHERE ?', { id: answer.ID }, (err, res) => {
             confirmItem(res[0].product_name, res);
         });
     });
@@ -219,7 +220,7 @@ var confirmItem = function(product, object) {
     }).then((answer) => {
         if (answer.confirmItem) {
             itemToUpdate = {
-                item_id: object[0].item_id,
+                id: object[0].id,
                 product_name: object[0].product_name,
                 department_name: object[0].department_name,
                 price: object[0].price,
@@ -253,7 +254,7 @@ var askHowMany = function() {
                 stock_quantity: Number(itemToUpdate.stock_quantity) + Number(answer.howMany)
             },
             {
-                item_id: itemToUpdate.item_id
+                id: itemToUpdate.id
             }
         ], (err, res) => {
             console.log(chalk.blue.bold(`\n\tInventory updated! '${itemToUpdate.product_name}' now has ${Number(itemToUpdate.stock_quantity) + Number(itemToUpdate.howMany)} items in stock\n`));
