@@ -9,17 +9,17 @@ Simple command line storefront with two functionalities:
 ![Customer](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonCustomer.PNG)
 ## Manager
 ## Allows user to view, update, add, and remove products
-![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager.PNG),
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager1.PNG),
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager2.PNG),
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager3.PNG),
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager4.PNG),
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager5.PNG),
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager6.PNG),
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager7.PNG)
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager8.PNG)
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager9.PNG)
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager10.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager1.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager2.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager3.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager4.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager5.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager6.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager7.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager8.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager9.PNG)
+![Manager](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager10.PNG)
 
 
 ## Technologies used
