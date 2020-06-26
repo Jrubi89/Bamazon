@@ -5,10 +5,11 @@ Week 12 Homework
 Simple command line storefront with two functionalities:
 
 * [**Customer**]
-
-    (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonCustomer.PNG)
-    
-![**Manager**](https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager.PNG)
+##  Allows user to view and purchase products
+   ![Customer] (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonCustomer.PNG)
+* [**Manager**}
+	* allows user to view, update, add, and remove products
+    ![Manager] (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager.PNG)
     (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager1.PNG)
     (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager2.PNG)
     (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager3.PNG)
@@ -19,7 +20,6 @@ Simple command line storefront with two functionalities:
     (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager8.PNG)
     (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager9.PNG)
     (https://raw.githubusercontent.com/Jrubi89/Bamazon/master/Screenshots/bamazonManager10.PNG)
-	* allows user to view, update, add, and remove products
 
 
 ## Technologies used
